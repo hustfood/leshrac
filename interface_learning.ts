@@ -27,3 +27,10 @@ myFunc = function(oneStr: string, twoStr: string): boolean {
 myFunc("1234", "5678");
 
 // interface of indexable types
+interface strArray {
+    [index: number]: string;
+}
+
+let myArray: strArray;
+myArray = ["Bob", "Freb"];
+console.log(myArray[0])
